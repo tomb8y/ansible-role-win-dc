@@ -1,0 +1,5 @@
+---
+# default user for using become: runas method
+# used for escalation in this role
+ansible_become_user: "{{ ansible_user }}"
+ansible_become_password: "{{ svc_ansible_password }}"

@@ -1,0 +1,5 @@
+# Ansible Lint Configuration https://github.com/ansible/ansible-lint
+skip_list:
+  - "701"
+  # Some lines needs to be longer than 160 chars
+  - "204"

@@ -1,0 +1,8 @@
+---
+- name: "Promote server DC"
+  hosts: Domain-Controllers
+  tasks:
+    - name: "Setup DC"
+      win_domain_controller:
+         dns_domain_name: primary.ad.fgcu.edu
+         state: domain_controller
